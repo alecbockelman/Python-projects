@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
+
 """
 Created on Fri Nov  5 00:34:51 2021
 
-@author: Owner
+@author: Alec Bockelman
 """
 
 
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-import random
 import statistics
 from math import sqrt
 import numpy as np
@@ -19,11 +18,10 @@ from statsmodels.graphics.tsaplots import plot_pacf
 from pandas import Series
 from pandas.plotting import autocorrelation_plot
 from statsmodels.tsa.arima.model import ARIMA
-from pmdarima import auto_arima
 from sklearn.metrics import mean_squared_error
 
 
-csv="VIX_Hist.csv"
+csv="VIX_History.csv"
 csv2= "CBOE Vix Volatility Historical Data.csv"
 data = pd.read_csv(csv)
 data2= pd.read_csv(csv2)
@@ -130,6 +128,15 @@ x = pd.to_datetime(data_datetime)
 x_point = pd.to_datetime(x_point)
 x_peak_point = pd.to_datetime(x_peak_point)
 
+#series from 2011-current for autoregression mode, vvix max historical data starts at 2011
+data_ar = data.iloc[len(data)-2506:len(data)-1]
+data_date = data_ar["DATE"].index.tolist()
+data_close = data_ar["CLOSE"].tolist()
+vix_series = Series(data_close, index = data_date )
+
+
+
+
 
 fig, ax = plt.subplots(figsize=(12, 12))
 plt.plot(x,y)
@@ -141,13 +148,7 @@ plt.title('Historical VIX Price')
 
 
 
-#series from 2011-current for autoregression model
-data_ar = data.iloc[len(data)-2506:len(data)-1]
-data_date = data_ar["DATE"].index.tolist()
-data_close = data_ar["CLOSE"].tolist()
-vix_series = Series(data_close, index = data_date )
-fig, ax = plt.subplots(figsize=(12, 12))
-autocorrelation_plot(vix_series)
+
 plot_acf(vix_series, lags =900)
 plot_pacf(vix_series, lags =10)
 plt.show()
@@ -167,15 +168,12 @@ plt.show()
 # summary stats of residuals
 print(residuals.describe())
 
-
-model_fit = auto_arima(vix_series, start_p=1, max_p=3, start_q=1, max_q=6, seasonal=False, trace=True)
 model_fit.summary()
 
 
 
-
 X = vix_series.values
-size = int(len(X) * 0.66)
+size = int(len(X) * 0.75)
 train, test = X[0:size], X[size:len(X)]
 history = [x for x in train]
 predictions = list()
@@ -215,7 +213,7 @@ model = ARIMA(differenced, order=(1,1,0))
 model_fit = model.fit()
 # multi-step out-of-sample forecast
 start_index = len(differenced)
-end_index = start_index + 13
+end_index = start_index + 9
 forecast = model_fit.predict(start=start_index, end=end_index)
 # invert the differenced forecast to something usable
 history = [x for x in X]
@@ -232,35 +230,14 @@ for yhat in forecast:
     data_close = data_close[-20::]
     std_dev = statistics.stdev(data_close)
     future_std_dev.append(std_dev)
-
-
-    if std_dev >= 3.16:  
-        y_val_forecast.append(inverted*.9)
-
-        history.append(inverted*.9)
-        data_close.append(inverted*.9)
-        print('Day %d: %f' % (day, inverted*.9))
-    elif std_dev <= .91 and (std_dev <= future_std_dev[-2] or std_dev <= future_std_dev[-3]) and data_close[-1] >= 19 : # and above mean:
-        y_val_forecast.append(inverted*1.17)
-        history.append(inverted*1.17)
-        data_close.append(inverted*1.17)
-        print('Day %d: %f' % (day, yinverted*1.17))
-    #add if statements to adj inverted value. look at spike and peak indicators
-    #compute last 20 day std dev, determine if above/below mean and if a vix spike has occurred
-
-    
-    else:
-        y_val_forecast.append(inverted)
-        history.append(inverted)
-        data_close.append(inverted)
-        print('Day %d: %f' % (day, inverted))
+    y_val_forecast.append(inverted)
+    history.append(inverted)
+    data_close.append(inverted)
+    print('Day %d: %f' % (day, inverted))
     day += 1
-# plot forecasts against actual outcome
+#plot forecasts against actual outcome
 fig, ax = plt.subplots(figsize=(12, 12))
 plt.plot(test)
 plt.plot(x_val_forecast, y_val_forecast, color = 'blue', linestyle='dashed')
 plt.plot(predictions, color='red')
 plt.show()
-
-
-
