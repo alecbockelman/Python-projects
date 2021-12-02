@@ -6,4 +6,6 @@ Includes the following projects:
 
 
 
+VIX Signals Plot Output:
+
 ![alt text](https://github.com/alecbockelman/Python-projects/blob/main/VIX/VIX%20Output/VIX_signals.png)
