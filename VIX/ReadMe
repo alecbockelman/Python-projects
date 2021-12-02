@@ -1,0 +1,4 @@
+This project deals with general statistics of the VIX. The Vix signals are created by looking at the past 20 day rolling std dev.
+When the std dev falls below the 15th percentile it appears to be a good indicator a VIX spike may occur soon.
+These signals are given by the green and black dots. They are leading indicators. A black dot on average returns 28 % gain in the VIX. 63 days was chosen because it is a quarterly
+forecast = 252/4.
