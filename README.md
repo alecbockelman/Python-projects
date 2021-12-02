@@ -1,5 +1,5 @@
 # Python Projects
 Includes the following projects:
-1. VIX Stats Analysis(includes csv file and relevant academic research paper- I am not the author or associated with this paper, I provided it because it is what drove me to make this project.) This model uses ARIMA to forecast 14 day out price movements with a RMSE of 2.3.
-2. Stock sentiment analysis
-3. GLD price ML algorithm
+1. VIX Stats Analysis.  This model gives the historical average, rolling 20 day standard deviation and other statistical results. The model also has presents statistically relevant signals. This model uses ARIMA to forecast in sample 3 day out VIX movements with a RMSE of 2.68.
+2. Stock sentiment analysis. Uses sentiment from key words in headlines. Then determines whether the news article headline as a whole is positive, negative, or neutral.
+3. GLD price ML algorithm to fit regression model for next day out price with 74% directional accuracy. It uses gold miner stocks, and silver & gold moving averages as factors.
