@@ -9,7 +9,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # Parameters
 n = 5  # the # of article headlines displayed per ticker
-tickers = ['C', 'SOFI', 'NATH','FB','ZUMZ','KMI','NGS']
+tickers = ['C','BAC', 'AAPL','FB','XOM','CHX','SPY']
 
 # Get Data
 finwiz_url = 'https://finviz.com/quote.ashx?t='
