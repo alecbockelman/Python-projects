@@ -1,6 +1,6 @@
 # Python Projects
 Includes the following projects:
-1. VIX Stats Analysis.  This model gives the historical average, rolling 20 day standard deviation and other statistical results. The model also has presents statistically relevant signals. This model uses ARIMA to forecast in sample 3 day out VIX movements with a RMSE of 2.5.
+1. VIX Stats Analysis.  This model gives the historical average, rolling 20 day standard deviation and other statistical results. The model also has presents statistically relevant signals. The signals appear to be leading indicators. This model uses ARIMA to forecast in sample 3 day out VIX movements with a RMSE of 2.5.
 
 VIX Signals Plot Output:
 
