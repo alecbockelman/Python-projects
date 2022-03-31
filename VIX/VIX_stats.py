@@ -159,7 +159,7 @@ avg_low_vol_signal_return = mean(list_low_vol_return)
  
  
 list_high_vol_return =[]  
-for i in range((len(y_peak_point))-2):  #could be out of range
+for i in range((len(y_peak_point))-10):  #could be out of range
     list_high_vol_return.append(((data_close[data_close.index(y_peak_point[i]) + days_out_return   ]-y_peak_point[i])/y_peak_point[i]) *100)
     
 avg_high_vol_signal_return = mean(list_high_vol_return)
