@@ -50,7 +50,7 @@ def equity(ticker):
     return equity
 
 def return_equity(beta,rf,mktprm):
-    re = rf + beta*(mktprm-rf)
+    re = rf + beta*(mktprm)
     re_round = round(re,2)
     return re
 
@@ -67,7 +67,7 @@ debt_equity_ratio = totaldebt/equity(ticker)
 
 wd = debt_equity_ratio/(1+debt_equity_ratio)
 we = 1- wd
-wacc = (return_debt(totaldebt,ann_interest)*(1-taxrate)*wd) + (rf+(BetaLev*(mktprm-rf)) * we)
+wacc = (return_debt(totaldebt,ann_interest)*(1-taxrate)*wd) + (rf+(BetaLev*(mktprm)) * we)
 
 
 BetaU = BetaLev/(1+(debt_equity_ratio*(1-taxrate)))
@@ -75,7 +75,7 @@ new_BetaLev = BetaU*(1 +(new_d_to_e*(1-taxrate)))
 new_wd =new_d_to_e/(1+new_d_to_e)
 new_we = 1-wd
 new_rd = return_debt(totaldebt,ann_interest)+increase_rd
-new_wacc  = (new_rd*(1-taxrate)*wd) + (rf+(new_BetaLev*(mktprm-rf)) * we)
+new_wacc  = (new_rd*(1-taxrate)*wd) + (rf+(new_BetaLev*(mktprm)) * we)
 
 print('Beta ',BetaLev, 'R^2',r_2)
 print('Return on Equity: ',round(return_equity(BetaLev,rf,mktprm),3) )
