@@ -8,7 +8,16 @@ VIX Signals Plot Output:
 
 
 2. Stock sentiment analysis. Uses sentiment from key words in headlines. Then determines whether the news article headline as a whole is positive, negative, or neutral.
+
+![alt text](https://github.com/alecbockelman/Python-projects/blob/main/Stock%20Sentiment%20Project/Output/Recent%20News.png)
+![alt text](https://github.com/alecbockelman/Python-projects/blob/main/Stock%20Sentiment%20Project/Output/Mean%20Sentiment.png)
+
 3. GLD price ML algorithm to fit regression model for next day out price with 74% directional accuracy. It uses gold miner stocks, and silver & gold moving averages as factors.
+
+![alt text](https://github.com/alecbockelman/Python-projects/blob/main/GLD%20ML%20Project/GLD%20Output/GLD%20tested%20outputs.png)
+
 4. WACC & Beta Lev calculator. This program calculates the beta lev and WACC for any given ticker at different D/E ratios. The required inputs are:  risk free rate, market premium, tax rate, total debt, annual interest paid, new d/e ratio, and increase in the return on debt. 
 
+![alt text](https://github.com/alecbockelman/Python-projects/blob/main/WACC%20%26%20BetaLev%20Calculator/WACC%20Calc%20Output.png)
+![alt text](https://github.com/alecbockelman/Python-projects/blob/main/WACC%20%26%20BetaLev%20Calculator/Beta%20Lev%20Output.png)
 
