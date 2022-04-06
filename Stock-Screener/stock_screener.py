@@ -22,8 +22,10 @@ listfloat = []
 def floatshs(ticker):
     freefloat = yf.Ticker(ticker).info.get('floatShares')
     listfloat.append(freefloat)
+    return listfloat
     
 result = [floatshs(x) for x in stocks['Symbol']]
 
+# stocks.insert(2, "Float", result, True)
 
 
