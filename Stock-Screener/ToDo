@@ -1,0 +1,4 @@
+1. Clean raw data - remove warrants/units and add internationally listed stocks
+2. Take in user input/ build out mouse interactions and visual display
+3. Add multithreading for concurrent filtering of different screener inputs
+
