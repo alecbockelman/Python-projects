@@ -1,50 +1,33 @@
 Symbol,Name,Sector,Price,Float,50 Day AVG
-YMM,{'Full Truck Alliance Co. Ltd.'},{'Technology'},{6.52},{580565082},{7.8656}
-YOU,"{'Clear Secure, Inc.'}",{'Technology'},{27.95},{49947100},{24.686}
-YPF,{'YPF Sociedad Anónima'},{'Energy'},{5.14},{192672138},{4.502}
-YQ,{'17 Education & Technology Group Inc.'},{'Consumer Defensive'},{2.76},{16642102},{1.9692}
-YRD,{'Yiren Digital Ltd.'},{'Financial Services'},{2.62},{12041193},{2.5634}
-YSG,{'Yatsen Holding Limited'},{'Consumer Cyclical'},{0.786},{146766466},{1.155}
-YTEN,"{'Yield10 Bioscience, Inc.'}",{'Basic Materials'},{3.91},{3622293},{4.4198}
-YUM,"{'Yum! Brands, Inc.'}",{'Consumer Cyclical'},{119.17},{288573519},{120.6894}
-YUMC,"{'Yum China Holdings, Inc.'}",{'Consumer Cyclical'},{41.72},{424568383},{46.558}
-YTRA,"{'Yatra Online, Inc.'}",{'Consumer Cyclical'},{1.91},{31237329},{1.6978}
-YVR,{'Liquid Media Group Ltd.'},{'Communication Services'},{0.7867},{14698491},{0.7192}
-YY,{'JOYY Inc.'},{'Communication Services'},{37.72},{43999797},{43.2654}
-Z,"{'Zillow Group, Inc.'}",{'Communication Services'},{47.68},{179819573},{52.8098}
-ZBH,"{'Zimmer Biomet Holdings, Inc.'}",{'Healthcare'},{129.62},{208899239},{120.89759}
-ZCMD,{'Zhongchao Inc.'},{'Healthcare'},{1.3392},{12196294},{1.7022}
-ZDGE,"{'Zedge, Inc.'}",{'Communication Services'},{6.19},{12115152},{7.1862}
-ZEAL,{'Zealand Pharma A/S'},{'Healthcare'},{15.54},{35919755},{16.12974}
-ZEN,"{'Zendesk, Inc.'}",{'Technology'},{122.5},{120612880},{114.379}
-ZEPP,{'Zepp Health Corporation'},{'Technology'},{2.94},{26674214},{3.5848}
-ZEST,"{'Ecoark Holdings, Inc.'}",{'Energy'},{2.32},{23836828},{2.4176}
-ZETA,{'Zeta Global Holdings Corp.'},{'Technology'},{13.31},{104889966},{11.1574}
-ZEUS,"{'Olympic Steel, Inc.'}",{'Basic Materials'},{37.12},{9515547},{26.5132}
-ZEV,"{'Lightning eMotors, Inc.'}",{'Industrials'},{4.59},{29330039},{5.1952}
-ZG,"{'Zillow Group, Inc.'}",{'Communication Services'},{46.15},{179819573},{51.908}
-ZH,{'Zhihu Inc.'},{'Communication Services'},{2.56},{458798985},{3.107}
-ZI,{'ZoomInfo Technologies Inc.'},{'Technology'},{55.36},{256544370},{54.814}
-ZIM,{'ZIM Integrated Shipping Services Ltd.'},{'Industrials'},{57.78},{80211172},{71.9084}
-ZION,"{'Zions Bancorporation, National Association'}",{'Financial Services'},{64.1},{149211281},{68.3892}
-YORW,{'The York Water Company'},{'Utilities'},{43.78},{12936870},{44.611}
-YI,"{'111, Inc.'}",{'Healthcare'},{2.97},{27111075},{2.845}
-ZIP,"{'ZipRecruiter, Inc.'}",{'Industrials'},{23.085},{37376353},{21.231}
-ZLAB,{'Zai Lab Limited'},{'Healthcare'},{43.51},{82979005},{46.4328}
-ZM,"{'Zoom Video Communications, Inc.'}",{'Technology'},{110.9},{222500369},{124.3106}
-ZNGA,{'Zynga Inc.'},{'Communication Services'},{9.02},{1069027442},{9.0582}
-ZME,{'Zhangmen Education Inc.'},{'Consumer Defensive'},{1.3199},{2394167},{1.5289}
-ZNTL,"{'Zentalis Pharmaceuticals, Inc.'}",{'Healthcare'},{33.97},{31471581},{49.0258}
-ZOM,{'Zomedica Corp.'},{'Healthcare'},{0.314},{965887103},{0.32802}
-ZSAN,{'Zosano Pharma Corporation'},{'Healthcare'},{0.146},{159819107},{0.22978}
-ZTEK,{'Zentek Ltd.'},{'Healthcare'},{2.83},{94881752},{2.7668}
-ZTO,{'ZTO Express (Cayman) Inc.'},{'Industrials'},{25.78},{407223488},{27.8552}
-ZTS,{'Zoetis Inc.'},{'Healthcare'},{200.09},{471427814},{193.6014}
-ZUO,"{'Zuora, Inc.'}",{'Technology'},{13.61},{118137895},{15.7182}
-ZUMZ,{'Zumiez Inc.'},{'Consumer Cyclical'},{41.87},{17396936},{44.3856}
-YMTX,"{'Yumanity Therapeutics, Inc.'}",{'Healthcare'},{2},{7946653},{1.5785}
-ZYXI,"{'Zynex, Inc.'}",{'Healthcare'},{6.08},{23167854},{6.4008}
-ZY,{'Zymergen Inc.'},{'Basic Materials'},{2.415},{66490235},{3.6283}
-ZYNE,"{'Zynerba Pharmaceuticals, Inc.'}",{'Healthcare'},{1.85},{40127546},{2.2474}
-ZYME,{'Zymeworks Inc.'},{'Healthcare'},{6.45},{49047558},{7.1978}
-TRUE,"{'TrueCar, Inc.'}",{'Communication Services'},{3.95},{59911024},{3.4967}
+ACHR,Archer Aviation Inc.,Industrials,4.02,119518778,3.6132
+ACHL,Achilles Therapeutics plc,Healthcare,3.02,2020836,3.2626
+ACI,"Albertsons Companies, Inc.",Consumer Defensive,35.28,121968007,32.065
+ACLS,"Axcelis Technologies, Inc.",Technology,56.76,32595564,68.6036
+ACM,AECOM,Industrials,78.24,132383058,72.8756
+ACN,Accenture plc,Technology,338.92,632646989,329.0902
+ACOR,"Acorda Therapeutics, Inc.",Healthcare,1.8,10205855,2.0494
+ACMR,"ACM Research, Inc.",Technology,17.44,34482959,23.9466
+ACRE,Ares Commercial Real Estate Corporation,Real Estate,15.76,45669349,14.8186
+ACT,"Enact Holdings, Inc.",Financial Services,21.21,147516218,21.5636
+ACRX,"AcelRx Pharmaceuticals, Inc.",Healthcare,0.268,132812795,0.3714
+ACST,Acasti Pharma Inc.,Healthcare,1.15,33202851,1.1506
+ACTG,Acacia Research Corporation,Industrials,4.64,48533562,4.0314
+ADAP,Adaptimmune Therapeutics plc,Healthcare,1.86,88900130,2.4324
+ADBE,Adobe Inc.,Technology,434.44,471054150,464.3218
+ADC,Agree Realty Corporation,Real Estate,68.38,69620550,64.5162
+ADCT,ADC Therapeutics SA,Healthcare,15.2,28831581,15.2096
+ADES,"Advanced Emissions Solutions, Inc.",Industrials,6.2797,16022353,6.2078
+ADGI,"Adagio Therapeutics, Inc.",Healthcare,3.675,50171161,5.833
+ADIL,"Adial Pharmaceuticals, Inc.",Healthcare,1.62,20799869,2.0462
+ADI,"Analog Devices, Inc.",Technology,154.89,521185237,160.1668
+ADM,Archer-Daniels-Midland Company,Consumer Defensive,94.57,559102764,82.4362
+ADN,"Advent Technologies Holdings, Inc.",Utilities,2.95,28448818,3.0657
+ADMA,"ADMA Biologics, Inc.",Healthcare,1.98,160327502,1.6826
+ADMP,Adamis Pharmaceuticals Corporation,Healthcare,0.4822,147800761,0.604
+ADNT,Adient plc,Consumer Cyclical,34.36,94074584,40.616
+ADP,"Automatic Data Processing, Inc.",Industrials,230.96,419335389,212.0342
+ADPT,Adaptive Biotechnologies Corporation,Healthcare,13.16,96758314,13.9724
+ADT,ADT Inc.,Industrials,7.41,209279703,7.5492
+ADS,"Bread Financial Holdings, Inc.",Financial Services,56.8,47108094,62.9006
+ADSK,"Autodesk, Inc.",Technology,199.03,216934204,218.4408
+ADTH,"AdTheorent Holding Company, Inc.",Communication Services,7.76,30853261,6.9686

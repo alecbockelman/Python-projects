@@ -26,6 +26,9 @@ def floatshs(ticker):
     
 result = [floatshs(x) for x in stocks['Symbol']]
 
-# stocks.insert(2, "Float", result, True)
+stocks.insert(2, "Float", listfloat, True)
+
+filename = "stock_tickers_info.csv"
+stocks.to_csv(filename, encoding='utf-8', index=False)
 
 
