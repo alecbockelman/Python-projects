@@ -37,4 +37,4 @@ Uses the folowing stats trained on 2023 games:
                 
 1. Uses Ridge Regression to calculate fair spread, this regression model minimizes the loss value and has a penalty for an large coefficants to prevent Multicollinearity
    causing overfitting
-2. Note code takes aprroximately **35-50 MINUTES TO RUN**
+2. Note code takes aprroximately **27.58 MINUTES TO RUN**
