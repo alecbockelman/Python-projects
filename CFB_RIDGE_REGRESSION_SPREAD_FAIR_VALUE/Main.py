@@ -1082,7 +1082,7 @@ ridgecv = RidgeCV(alphas = alphas, scoring = 'neg_mean_squared_error', alpha_per
 ridgecv.fit(X_train, y_train)
 ridgecv.alpha_
 
-ridge5 = Ridge(alpha = 2**5, solver='auto')
+ridge5 = Ridge(alpha = 0, solver='auto')
 ridge5.fit(X_train, y_train)
 mean_squared_error(y_test, ridge5.predict(X_test))
 
@@ -3236,7 +3236,7 @@ predict_2024.sort_values(by ='confidence', ascending = False ,inplace = True)
 
 #drop all predicted spreads with favorite winning more than by 3, project upsets only
 predict_2024 = predict_2024.head(5)
-predict_2024 = predict_2024.loc[predict_2024['projected_spread']>-3]
+#predict_2024 = predict_2024.loc[predict_2024['projected_spread']>-3]
 predict_2024.reset_index(drop=True,inplace=True)
 
 #display top 5 picks of the week ranked by confidence
